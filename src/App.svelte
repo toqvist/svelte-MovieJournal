@@ -26,7 +26,6 @@
   }
 
   const search = searchTerm => {
-    //This seems costly, probably better to check if array is empty
     const tempMovies = movies = localStorage.getItem('movies') ? 
       JSON.parse(localStorage.getItem('movies')):
       [];
@@ -43,7 +42,6 @@
   <h1>Movie Journal</h1>
   
   <!-- event.detail give us the data from the event object -->
-  
    
    <MovieList movies={movies} />
    <Search 
